@@ -18,12 +18,11 @@ registerBlockType( 'cgb/block-post-selector', {
 	icon: 'shield',
 	category: 'common',
 	attributes: {
-		url: { type:'string' }
+		url: { type: 'string' },
 	},
 	keywords: [
-		__( 'News Related' )
+		__( 'News Related' ),
 	],
-
 	edit: ( props ) => {
 		function updateContent( event ) {
 			props.setAttributes( { url: event.target.value } );
