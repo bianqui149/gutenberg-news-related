@@ -31,11 +31,7 @@ registerBlockType( 'cgb/block-post-selector', {
 		return wp.element.createElement(
 			'div',
 			'null',
-			wp.element.createElement(
-				'h3',
-				null,
-				'Post your url'
-			),
+			wp.element.createElement( 'h3', null, 'News Related' ),
 			wp.element.createElement( 'input', { type: 'text', class: 'news__related__object', value: props.attributes.url, onChange: updateContent } )
 		);
 	},
